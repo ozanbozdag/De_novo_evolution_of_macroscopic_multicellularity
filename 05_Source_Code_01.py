@@ -16,8 +16,8 @@ strain_list=[]
 rep_vol_weighted=[]
 
 
-data1 = np.genfromtxt("t0_and_t600.csv", dtype=float, delimiter=',')
-data2 = np.genfromtxt("t0_and_t600.csv", dtype=str, delimiter=',')
+data1 = np.genfromtxt("file_name.csv", dtype=float, delimiter=',')
+data2 = np.genfromtxt("file_name.csv", dtype=str, delimiter=',')
 Vol=data1[1:,2]
 timepoint=data1[1:,1]
 Vol=np.array(Vol)
@@ -52,7 +52,7 @@ for i in range(0,len(strain_noDupes)):
     tempVol=tempslice[0:,0]
     tempLogVol=tempslice[0:,1]
     total_biomass=sum(tempslice[0:,0])
-    binsize=(max(tempLogVol)-min(tempLogVol))/(numbins) #don't have to do logs but might be good for something that is long-tailed
+    binsize=(max(tempLogVol)-min(tempLogVol))/(numbins) 
     for d in range(0,(numbins+1)):
         binvec.append(min(tempLogVol)+binsize*d)
     for h in range(0,len(binvec)-1):
@@ -69,7 +69,6 @@ for i in range(0,len(strain_noDupes)):
     rep_vol_weighted.append(np.average(binmeans, weights=biomass)) 
     print "binmeans", binmeans[1]
     print "biomass", biomass[1]
-    #c=('r','r','r','r','r','b','b','b','b','b','g','g','g','g','g')
     plt.plot(binmeans, biomass, alpha=.9)
     plt.xlabel('Volume (log), a.u.')
     plt.ylabel('Fraction biomass at that size')  
