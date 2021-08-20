@@ -1,5 +1,5 @@
 #Source code 01 (Figure 1D and FigS2).
-#This code calculates the distribution of cellular biomass over the range of cluster sizes, and finds the mean of this biomass distribution (see Fig1D for the average cluster size and Fig. S2 for a visual representation of size distribution, calculated using this code).
+#This code corrects the distribution of cellular biomass over the range of cluster sizes, and finds the mean of this biomass distribution (see Fig1D for the average cluster size and Fig. S2 for a visual representation of size distribution, calculated using this code).
 import numpy as np
 import matplotlib.pyplot as plt
 import math
