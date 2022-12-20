@@ -6,8 +6,6 @@ File # 01_B Average multicellular size weighted by cluster biomass / volume (Fig
 
 File # 02 Raw data: Cellular aspect ratio (Fig2D&E, FigS3)
 
-File # 03 Raw data: Multicellular size of genetically engineered mutant snowflake yeast (Fig4D)
-
 File # 04 Supplementary Information: De novo variants detected by Illumina Sequencing (Fig4)
 
 File # 05 Source code: Python script to calculate weighted biomass means (average multicellular size in Fig1D)
